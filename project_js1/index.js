@@ -20,3 +20,25 @@ console.log(person.name);
 //Bracket Notation
 console["name"] = "Mary";
 console.log(person.name);
+
+//-----------Arrays----------------
+let selectedColors = ["red", "blue"];
+console.log(selectedColors.values);
+
+//adding a 3rd member to array
+selectedColors[3] = 23;
+
+//-----------------functions-------------------
+//js functions without parameters
+function greet() {
+  console.log("hey this is function");
+}
+
+greet();
+
+//js functions with parameters
+function greets(firstname, lastname) {
+  console.log("hello, " + firstname + "" + lastname);
+}
+
+greet("joe", "dread");
