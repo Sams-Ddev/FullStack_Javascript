@@ -38,7 +38,7 @@ greet();
 
 //js functions with parameters
 function greets(firstname, lastname) {
-  console.log("hello, " + firstname + "" + lastname);
+  console.log("hello, " + firstname + " " + lastname);
 }
 
 greet("joe", "dread");
