@@ -27,12 +27,12 @@ keywords to  use:
   -const (eg- const constantName;)
 *********/
 
-//---------------variables Concept
+//---------------variables Concept----------------
 
 let name = Kwadjo;
 let age = 30;
 
-//Lets put thesse variables inside of object
+//Putting thesse variables inside of object
 let person = {
   name: "Mosh", //Key value pairs
   age: 30,
@@ -57,11 +57,39 @@ firstLetterOfFirstName = firstName[0];
 console.log(firstLetterOfFirstName); //produce 'M'
 
 //-----------Arrays----------------
-let selectedColors = ["red", "blue"];
-console.log(selectedColors.values);
+// Arrays allow to store different pieces of data types
+
+let selectedColors = ["red", "blue", 23.05];
+console.log(selectedColors.length);
 
 //adding a 3rd member to array
-selectedColors[3] = 23;
+selectedColors[3] = 100;
+
+//Accessing the nth element of an Array
+console.log(selectedColors[2]);
+
+//Nested Arrays
+var myArray = [
+  ["Bulls", 34],
+  ["white sox", 54],
+];
+
+//Using array indexes to modify Arrays
+var ourArray = [18, 64, 99];
+ourArray[1] = 45; /* Our array now is [18, 45, 99] */
+
+//Using array indexes to modify Multiple arrays
+var myArrays = [[1, 2, 3][(4, 5, 6, 7)][(8, 9, 10)][([11, 12], 13, 14)]];
+
+var myData = myArrays[0][0]; /* the result is 1 */
+var myData = myArrays[1][3]; /* the result is 7 */
+var myData = myArrays[3][0][1]; /* the result is 12 */
+
+//Manipulating Arrays with the push function
+var oldArray = ["stephen", "J", "Joy"];
+
+/** adding 'John', 3 and 'Joseph' to the oldArray */
+oldArray.push(["John", 3, "Joseph"]);
 
 //-----------------functions-------------------
 //js functions without parameters
